@@ -1,0 +1,22 @@
+!!! 5
+html.login
+  head
+    title Login Page
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='javascripts/lib/jquery.js')
+    script(src='http://localhost:3000/socket.io/socket.io.js')
+    script(type='text/javascript', src='javascripts/util/utility.js')
+    script(src='/javascripts/page/competitionSocket.js')
+  body(oncontextmenu='return false;')
+    section.loginform.cf
+      form(name='login', action='/login', method='post', accept-charset='utf-8')
+        ul
+          li.center
+            label.head LOGIN 
+          li
+            input(type='email', name='usermail', placeholder='Username', required='', class='username')
+          li
+            input(type='password', name='password', placeholder='Password', required='',class='password')
+          li.center
+            input(type='submit', value='LOGIN', class='button')
+            input(type='reset', value='RESET', class='button')

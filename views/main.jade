@@ -1,0 +1,19 @@
+!!! 5
+html.main
+  head
+    title Login Page
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='javascripts/lib/jquery.js')
+    script(type='text/javascript', src='javascripts/page/main.js')
+    script(src='http://localhost:3000/socket.io/socket.io.js')
+    script(src='javascripts/util/utility.js')
+  body(oncontextmenu='return false;')
+      section.loginform.cf
+      div#main-logo
+      input(type='button', value='Start Game', id='btnStart', value='Start Game', class='button main-button')
+      span#main-warning Sorry Your browser does not support the Game 
+        span <br/>Please use Latest Browsers  
+        span <br/>
+        a(href='https://www.google.com/intl/en/chrome/browser/', target='_blank') Chrome
+        span ,&nbsp;
+        a(href='http://www.mozilla.org/en-US/firefox/new/', target='_blank') Firefox

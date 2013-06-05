@@ -1,0 +1,50 @@
+html
+  head
+    title Login Page
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='javascripts/lib/jquery.js')
+    script(src='http://localhost:3000/socket.io/socket.io.js')
+    script(src='/javascripts/util/utility.js')
+    script(src='/javascripts/page/test.js')
+    script(src='/javascripts/page/testSocket.js')
+  body(oncontextmenu='return false;')
+    section.loginform.cf.nb
+      .detail-container
+        span#self-clock
+        div#header
+        div#logo
+        div#time
+        input(type='button', id='reload-btn')
+        input(type='hidden', id='hGameStatus')
+        label(class='label level-label') Level
+        div#levelName
+          input(type='hidden', id='hlevelID')
+        label(class='label section-label') Section
+        div#levelTarget
+        label(class='label score-label') Score
+        div#score
+        div
+          div#display
+          div#equal =
+          div#target 
+        #life-container
+          span.life
+          span.life
+          span.life
+      #status-msg
+      div(id='operator-container', class='operators')
+      div(id='bracket-container', class='brackets')
+        span.btn.sb (
+        span.btn.eb )
+      #operand-container
+      div#pop
+      div#overlay
+      span#bgsound
+      div#result-status
+      div(id='player-div', class='player')
+        ul
+          li Ankit Sharma
+      input#submit-result(type='submit', value='Submit Result')
+      input#reset-button(type='reset', value='C')
+      input#player-button(type='button', value='P')
+      input#hiddenInfo(type='hidden', name='hiddenInfo')
